@@ -31,6 +31,8 @@
 #define ELMAXPATH 1024
 
 #define LOGTIMEFORMAT "%Y-%m-%d-%H-%M"
+// #define LOGTIMEFORMAT "%Y-%m-%d-%H" //creates a log file for every hour
+// #define LOGTIMEFORMAT "%Y-%m-%d" //creates a log file for every day
 #define LOGTIMEFORMATLEN 32
 
 #include <stdio.h>
