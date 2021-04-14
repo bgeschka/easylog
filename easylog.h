@@ -26,15 +26,15 @@
 #ifndef __EASYLOG_H__
 #define __EASYLOG_H__
 
-#ifndef ELDEFAULTLOGDIR
-#define ELDEFAULTLOGDIR "./logs"
-#endif /* ifndef ELDEFAULTLOGDIR */
+#ifndef EASYLOG_LOGDIR
+#define EASYLOG_LOGDIR "./logs"
+#endif /* ifndef EASYLOG_LOGDIR */
 
-#ifndef LOGTIMEFORMAT
-#define LOGTIMEFORMAT "%Y-%m-%d-%H"
-// #define LOGTIMEFORMAT "%Y-%m-%d-%H" //creates a log file for every hour
-// #define LOGTIMEFORMAT "%Y-%m-%d-%H-%M" //creates a log file for every minute
-#endif /* ifndef LOGTIMEFORMAT */
+#ifndef EASYLOG_TIMEFORMAT
+#define EASYLOG_TIMEFORMAT "%Y-%m-%d-%H"
+// #define EASYLOG_TIMEFORMAT "%Y-%m-%d-%H" //creates a log file for every hour
+// #define EASYLOG_TIMEFORMAT "%Y-%m-%d-%H-%M" //creates a log file for every minute
+#endif /* ifndef EASYLOG_TIMEFORMAT */
 
 #define LOGTIMEFORMATLEN 32
 #define ELMAXPATH 1024

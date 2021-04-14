@@ -4,11 +4,11 @@ static int easylog_timestamp(char *dest, int maxlen)
 {
 	time_t t = time(NULL);
 	struct tm tm = *localtime(&t);
-	return strftime(dest, maxlen, LOGTIMEFORMAT, &tm);
+	return strftime(dest, maxlen, EASYLOG_TIMEFORMAT, &tm);
 }
 
 static const char *easylog_getlogdir(){
-	return getenv("LOGDIR") ? getenv("LOGDIR"):  ELDEFAULTLOGDIR;
+	return getenv("EASYLOG_LOGDIR") ? getenv("EASYLOG_LOGDIR"):  EASYLOG_LOGDIR;
 }
 
 static const char *easylog_getlogfilepath(const char *logname)
